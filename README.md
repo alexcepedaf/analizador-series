@@ -3,7 +3,7 @@
 Aplicación web full-stack para administrar y analizar conjuntos de números enteros
 
 ## Stack tecnológico:
-- **Backend**: FastAPI (Python)
+- **Backend**: Flask (Python)
 - **Frontend**: React con v0.dev
 - **Base de datos**: MongoDB
 - **Orquestación**: Docker Compose
