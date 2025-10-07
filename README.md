@@ -43,7 +43,7 @@ analizador-series/
 ### Ejecutar la aplicación
 ### Clonar el repositorio y ejecutar el docker-compose
 ```
-git clone https://github.com/alexcepedaf/analizador-series
+git clone https://github.com/alexcepedaf/analizador-series-git
 cd analizador-series
 docker compose up --build
 ```
