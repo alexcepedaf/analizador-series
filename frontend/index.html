@@ -48,7 +48,7 @@
                 setMessage("")
                 
                 try {
-                    const response = await fetch("/api/series", {
+                    const response = await fetch("/series", {
                         method: "POST",
                         headers: {
                             "Content-Type": "application/json",
@@ -122,7 +122,7 @@
                 setLoading(true)
                 setMessage("")
                 try {
-                    const response = await fetch("/api/series")
+                    const response = await fetch("/series")
                     if (!response.ok) throw new Error("Failed to fetch series")
                     const data = await response.json()
                     setSeries(data)
@@ -141,7 +141,7 @@
                 setAnalyzingId(seriesItem.id)
                 setMessage("")
                 try {
-                    const response = await fetch(`/api/series/${seriesItem.id}/analyze`)
+                    const response = await fetch(`/series/${seriesItem.id}/analyze`)
                     if (!response.ok) throw new Error("Failed to analyze series")
                     const data = await response.json()
                     onAnalyze(seriesItem, data)
