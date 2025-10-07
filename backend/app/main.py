@@ -6,7 +6,7 @@ from .utils import calculate_gcd, calculate_mean_std, find_primes
 from .database import mongodb
 
 app = Flask(__name__) 
-CORS(app)
+CORS(app, origins=["*"], supports_credentials=True)
 
 mongodb.connect()
     
@@ -87,8 +87,6 @@ def analyze_series(series_id):
         "std_dev": result.std_dev,
         "primes": result.primes
     })
-                    
-
                     
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8000, debug=True)                    
